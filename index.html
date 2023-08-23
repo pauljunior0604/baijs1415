@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    
+      <h3>Tính điểm</h3>
+      <label for="">Điểm Chuẩn</label>
+      <input type="number" min="0" max="30" id="diemChuan" />
+      <div>
+        <label for="">ĐIỂM MÔN 1</label>
+        <input type="number" min="0" max="10" id="diemMon1" />
+        <label for="">ĐIỂM MÔN 2</label>
+        <input type="number" min="0" max="10" id="diemMon2" />
+        <label for="">ĐIỂM MÔN 3</label>
+        <input type="number" min="0" max="10" id="diemMon3" />
+      </div>
+      <h4>Điểm ưu tiên</h4>
+      <div class="">
+        <label for="">Khu vực</label>
+        <select class="" name="" id="khuVuc">
+          <option value="khuVucA">A</option>
+          <option value="khuVucB">B</option>
+          <option value="khuVucC">C</option>
+          <option value="">X</option>
+        </select>
+      </div>
+      <div class="">
+        <label for="">Đối Tượng</label>
+        <select class="" name="" id="doiTuong">
+          <option value="doiTuong1">1</option>
+          <option value="doiTuong2">2</option>
+          <option value="doiTuong3">3</option>
+          <option value="doiTuong4">0</option>
+        </select>
+      </div>
+      <button onclick="tongDiem()" class="btn btn-success">
+        XEM KẾT QUẢ
+      </button>
+      <div id="ket-qua"></div>
+    </div>
+    <!-- tiền điện -->
+    <h3>Tính tiền điện</h3>
+    <div class="container">
+      <div class="form-group">
+        <label for="">Họ và tên</label>
+        <input type="text" class="form-control" id="ho-ten" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="">Số điện</label>
+        <input type="text" class="form-control" id="so-dien" placeholder="" />
+      </div>
+      <button class="btn btn-success" onclick="tienDien()">Tính tiền</button>
+      <div id="tong-tien"></div>
+    </div>
+    <!-- tính tiền thuế -->
+    <h3>TÍNH THUẾ THU NHẬP</h3>
+    <div class="container">
+      <div class="form-group">
+        <label for="">Họ và Tên</label>
+        <input type="text" class="form-control" id="ho-ten" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="">Thu nhập cá nhân</label>
+        <input
+          type="number"
+          class="form-control"
+          id="thu-nhap"
+          placeholder=""
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Số ngưới phụ thuộc</label>
+        <input
+          type="number"
+          class="form-control"
+          id="phu-thuoc"
+          placeholder=""
+        />
+      </div>
+      <button onclick="tinhThue()" class="btn btn-success">
+        Tính tiền thuế
+      </button>
+      <div id="tinhThue"></div>
+    </div>
+    <!-- tiền cáp -->
+    <div class="container">
+      <h3>TÍNH TIỀN CÁP</h3>
+      <div class="form-group">
+        <label for="">LOẠI KHÁCH HÀNG</label>
+        <select class="form-control" name="" id="loai-khach">
+          <option id="nha-dan">Nhà dân</option>
+          <option id="doanh-nghiep">Doanh nghiệp</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Kết nối</label>
+        <input type="number" class="form-control" id="ket-noi" placeholder="" />
+      </div>
+      <div class="form-group">
+        <label for="">Số kênh</label>
+        <input type="text" class="form-control" id="so-kenh" placeholder="" />
+      </div>
+      <button onclick="tinhCap()" class="btn btn-success">Tính tiền</button>
+      <div id="tinhCap"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
