@@ -37,10 +37,10 @@ function tongDiem(){
   const diemKhuVuc=tinhDiemKhuVuc(khuVuc);
   tongDiem=diemMon1+diemMon2+diemMon3+diemKhuVuc+diemDoiTuong;
     if (diemMon1==0||diemMon2==0||diemMon3==0){
-        document.getElementById('ket-qua').innerHTML=`Điểm : ${diemTong} Bạn đã rớt`
+        document.getElementById('ket-qua').innerHTML=`Điểm : ${tongDiem} Bạn đã rớt`
     }
     else if (tongDiem>=diemChuan){
-        document.getElementById('ket-qua').innerHTML=`Điểm : ${diemTong} Bạn đã đậu`
+        document.getElementById('ket-qua').innerHTML=`Điểm : ${tongDiem} Bạn đã đậu`
     }
     else{
         document.getElementById('ket-qua').innerHTML=` Bạn đã rớt`
@@ -95,6 +95,6 @@ function tinhThue(){
     if(thuNhap>960000000){
         chiuThue=(thuNhap-4e+6-phuThuoc*1600000)*0.35;
     }
-    document.getElementById("tinhThue").innerHTML=`Tiền thuế thu nhập cá nhân: ${chiuThue}`
+    document.getElementById("tinhThue").innerHTML=`Tiền thuế thu nhập cá nhân: ${chiuThue.toLocaleString()}`
 }
 // tính tiền cáp
